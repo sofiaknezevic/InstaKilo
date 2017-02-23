@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PhotoCollectionViewCell : UICollectionViewCell <UICollectionViewDelegateFlowLayout>
+@interface PhotoCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *myPhoto;
 
 
-- (NSMutableArray *)getArrayOfSubjects;
 
 @end

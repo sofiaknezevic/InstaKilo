@@ -15,13 +15,15 @@
 @property (nonatomic, strong) NSString *subject;
 @property (nonatomic, strong) NSString *location;
 
-@property (nonatomic, strong) NSMutableArray *arrayOfPhotos;
-@property (nonatomic, strong) NSMutableArray *arrayOfPhotoObjects;
+@property (nonatomic, strong) NSDictionary *subjectDict;
+@property (nonatomic, strong) NSDictionary *locationDict;
+@property (nonatomic, strong) NSMutableArray *arrayOfImages;
+
 
 - (NSMutableArray *)getArrayOfImages;
 
-- (NSInteger) getNumberOfSubjects;
-//- (NSMutableArray *)getArrayOfLocations;
+
+
 
 
 @end

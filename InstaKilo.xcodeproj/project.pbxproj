@@ -25,6 +25,7 @@
 		5D64A7431E5E0FD9007A0CDD /* IMG_3695.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A7421E5E0FD9007A0CDD /* IMG_3695.jpg */; };
 		5D64A7461E5E1170007A0CDD /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A7451E5E1170007A0CDD /* PhotoCollectionViewCell.m */; };
 		5D64A74C1E5E2AAD007A0CDD /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A74B1E5E2AAD007A0CDD /* Photos.m */; };
+		5D64A74F1E5E7C8D007A0CDD /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A74E1E5E7C8D007A0CDD /* HeaderCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,8 @@
 		5D64A7451E5E1170007A0CDD /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		5D64A74A1E5E2AAD007A0CDD /* Photos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photos.h; sourceTree = "<group>"; };
 		5D64A74B1E5E2AAD007A0CDD /* Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
+		5D64A74D1E5E7C8D007A0CDD /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		5D64A74E1E5E7C8D007A0CDD /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 			children = (
 				5D64A7441E5E1170007A0CDD /* PhotoCollectionViewCell.h */,
 				5D64A7451E5E1170007A0CDD /* PhotoCollectionViewCell.m */,
+				5D64A74D1E5E7C8D007A0CDD /* HeaderCollectionReusableView.h */,
+				5D64A74E1E5E7C8D007A0CDD /* HeaderCollectionReusableView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D64A74F1E5E7C8D007A0CDD /* HeaderCollectionReusableView.m in Sources */,
 				5D64A6E71E5DFCB7007A0CDD /* ViewController.m in Sources */,
 				5D64A7461E5E1170007A0CDD /* PhotoCollectionViewCell.m in Sources */,
 				5D64A74C1E5E2AAD007A0CDD /* Photos.m in Sources */,
