@@ -22,9 +22,9 @@
 		5D64A7271E5E0E24007A0CDD /* IMG_3693.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A7181E5E0E24007A0CDD /* IMG_3693.jpg */; };
 		5D64A7291E5E0E24007A0CDD /* IMG_3738.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A71A1E5E0E24007A0CDD /* IMG_3738.jpg */; };
 		5D64A73E1E5E0F3B007A0CDD /* IMG_3717.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A73C1E5E0F3B007A0CDD /* IMG_3717.jpg */; };
-		5D64A7411E5E0F77007A0CDD /* IMG_4367.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A7401E5E0F77007A0CDD /* IMG_4367.JPG */; };
 		5D64A7431E5E0FD9007A0CDD /* IMG_3695.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5D64A7421E5E0FD9007A0CDD /* IMG_3695.jpg */; };
 		5D64A7461E5E1170007A0CDD /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A7451E5E1170007A0CDD /* PhotoCollectionViewCell.m */; };
+		5D64A74C1E5E2AAD007A0CDD /* Photos.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D64A74B1E5E2AAD007A0CDD /* Photos.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +47,11 @@
 		5D64A7181E5E0E24007A0CDD /* IMG_3693.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_3693.jpg; path = "../../../../Pictures/Photos Library.photoslibrary/Masters/2017/01/07/20170107-062343/IMG_3693.jpg"; sourceTree = "<group>"; };
 		5D64A71A1E5E0E24007A0CDD /* IMG_3738.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_3738.jpg; path = "../../../../Pictures/Photos Library.photoslibrary/Masters/2017/01/07/20170107-062343/IMG_3738.jpg"; sourceTree = "<group>"; };
 		5D64A73C1E5E0F3B007A0CDD /* IMG_3717.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_3717.jpg; path = "../../../../Pictures/Photos Library.photoslibrary/Masters/2017/01/07/20170107-062343/IMG_3717.jpg"; sourceTree = "<group>"; };
-		5D64A7401E5E0F77007A0CDD /* IMG_4367.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_4367.JPG; path = "../../../Pictures/Photos Library.photoslibrary/Masters/2017/01/07/20170107-062343/IMG_4367.JPG"; sourceTree = "<group>"; };
 		5D64A7421E5E0FD9007A0CDD /* IMG_3695.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_3695.jpg; path = "../../../../Pictures/Photos Library.photoslibrary/Masters/2017/01/07/20170107-062343/IMG_3695.jpg"; sourceTree = "<group>"; };
 		5D64A7441E5E1170007A0CDD /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		5D64A7451E5E1170007A0CDD /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		5D64A74A1E5E2AAD007A0CDD /* Photos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photos.h; sourceTree = "<group>"; };
+		5D64A74B1E5E2AAD007A0CDD /* Photos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photos.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,6 @@
 		5D64A6D31E5DFCB7007A0CDD = {
 			isa = PBXGroup;
 			children = (
-				5D64A7401E5E0F77007A0CDD /* IMG_4367.JPG */,
 				5D64A6DE1E5DFCB7007A0CDD /* InstaKilo */,
 				5D64A6DD1E5DFCB7007A0CDD /* Products */,
 			);
@@ -136,6 +136,8 @@
 			children = (
 				5D64A6E21E5DFCB7007A0CDD /* AppDelegate.h */,
 				5D64A6E31E5DFCB7007A0CDD /* AppDelegate.m */,
+				5D64A74A1E5E2AAD007A0CDD /* Photos.h */,
+				5D64A74B1E5E2AAD007A0CDD /* Photos.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -211,7 +213,6 @@
 				5D64A6EF1E5DFCB7007A0CDD /* LaunchScreen.storyboard in Resources */,
 				5D64A71F1E5E0E24007A0CDD /* IMG_2727.jpg in Resources */,
 				5D64A7291E5E0E24007A0CDD /* IMG_3738.jpg in Resources */,
-				5D64A7411E5E0F77007A0CDD /* IMG_4367.JPG in Resources */,
 				5D64A7231E5E0E24007A0CDD /* IMG_3143.jpg in Resources */,
 				5D64A7201E5E0E24007A0CDD /* IMG_2826.jpg in Resources */,
 				5D64A73E1E5E0F3B007A0CDD /* IMG_3717.jpg in Resources */,
@@ -234,6 +235,7 @@
 			files = (
 				5D64A6E71E5DFCB7007A0CDD /* ViewController.m in Sources */,
 				5D64A7461E5E1170007A0CDD /* PhotoCollectionViewCell.m in Sources */,
+				5D64A74C1E5E2AAD007A0CDD /* Photos.m in Sources */,
 				5D64A6E41E5DFCB7007A0CDD /* AppDelegate.m in Sources */,
 				5D64A6E11E5DFCB7007A0CDD /* main.m in Sources */,
 			);
