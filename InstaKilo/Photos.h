@@ -15,8 +15,8 @@
 @property (nonatomic, strong) NSString *subject;
 @property (nonatomic, strong) NSString *location;
 
-@property (nonatomic, strong) NSDictionary *subjectDict;
-@property (nonatomic, strong) NSDictionary *locationDict;
+@property (nonatomic, strong) NSMutableDictionary *subjectDict;
+@property (nonatomic, strong) NSMutableDictionary *locationDict;
 @property (nonatomic, strong) NSMutableArray *arrayOfImages;
 
 

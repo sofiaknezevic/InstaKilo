@@ -29,9 +29,8 @@
     
     self.myPhotos = [Photos new];
     [self.myPhotos getArrayOfImages];
-    
-    
 
+    
 }
 
 
@@ -45,15 +44,15 @@
         NSArray *subjectValues = [self.myPhotos.subjectDict allValues];
         
         numberOfItemsInSection = [[subjectValues objectAtIndex:section]count];
-        
+
     }else if (self.choiceOfSegment == 1){
         
+//        NSArray *locationValues = [self.myPhotos.subjectDict allValues];
+//        
+//        numberOfItemsInSection = [[locationValues objectAtIndex:section]count];
         
-        NSArray *locationValues = [self.myPhotos.subjectDict allValues];
         
-        numberOfItemsInSection = [[locationValues objectAtIndex:section]count];
     }
-    
     
     return numberOfItemsInSection;
     
@@ -72,7 +71,7 @@
         numberOfSections = [[self.myPhotos.locationDict allKeys]count];
     
     }
-    
+    NSLog(@"%lu", numberOfSections);
     return numberOfSections;
 }
 
@@ -86,9 +85,14 @@
         NSArray *photosShown = [photos objectAtIndex:indexPath.section];
         
         cell.myPhoto.image = photosShown[indexPath.row];
+    }
+    
+    if (self.choiceOfSegment == 1){
         
-    }else if (self.choiceOfSegment == 1){
+        NSArray *photos = [self.myPhotos.locationDict allValues];
+        NSArray *photosShown = [photos objectAtIndex:indexPath.section];
         
+        cell.myPhoto.image = photosShown[indexPath.row];
         
     }
     
@@ -104,16 +108,6 @@
 - (IBAction)segmentChosen:(UISegmentedControl*)sender {
     
     self.choiceOfSegment = sender.selectedSegmentIndex;
-    
-    if(sender.selectedSegmentIndex == 0){
-        
-        
-        
-    }else if(sender.selectedSegmentIndex == 1){
-        
-        
-        
-    }
     
     [self.photoCollectionView reloadData];
 }

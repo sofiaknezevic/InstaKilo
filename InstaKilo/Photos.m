@@ -65,33 +65,33 @@
                                       andWithSubject:@"animals"
                                      andWithLocation:@"montenegro"];
     
-    self.subjectDict = @{
+    self.subjectDict = [@{
                               @"travel":@[number1.photo,number5.photo,number6.photo],
                               @"birthday":@[number2.photo],
                               @"sightseeing":@[number3.photo,number4.photo,number8.photo,number7.photo],
                               @"food":@[number9.photo],
                               @"animals":@[number10.photo],
-                              };
-    self.locationDict = @{
+                              }mutableCopy];
+    self.locationDict = [@{
                                @"amsterdam":@[number1.photo],
-                               @"canada":@[number2.photo, number8.photo, number9.photo],
+                               @"canada":@[number2.photo, number8.photo, number9.photo, number7.photo],
                                @"dubrovnik":@[number3.photo, number4.photo],
                                @"montenegro":@[number5.photo, number6.photo, number10.photo],
-                               };
+                               }mutableCopy];
     
     
     
     self.arrayOfImages = [@[
-                           number1.photo,
-                           number2.photo,
-                           number3.photo,
-                           number4.photo,
-                           number5.photo,
-                           number6.photo,
-                           number7.photo,
-                           number8.photo,
-                           number9.photo,
-                           number10.photo,
+                           number1,
+                           number2,
+                           number3,
+                           number4,
+                           number5,
+                           number6,
+                           number7,
+                           number8,
+                           number9,
+                           number10,
                            ]mutableCopy];
     
     return self.arrayOfImages;
