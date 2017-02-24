@@ -72,6 +72,8 @@
                               @"food":@[number9.photo],
                               @"animals":@[number10.photo],
                               }mutableCopy];
+    
+    
     self.locationDict = [@{
                                @"amsterdam":@[number1.photo],
                                @"canada":@[number2.photo, number8.photo, number9.photo, number7.photo],
@@ -79,6 +81,7 @@
                                @"montenegro":@[number5.photo, number6.photo, number10.photo],
                                }mutableCopy];
     
+
     
     
     self.arrayOfImages = [@[

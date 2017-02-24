@@ -25,7 +25,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.myPhotos = [Photos new];
     [self.myPhotos getArrayOfImages];
@@ -45,11 +44,11 @@
         
         numberOfItemsInSection = [[subjectValues objectAtIndex:section]count];
 
-    }else if (self.choiceOfSegment == 1){
+    }else{
         
-//        NSArray *locationValues = [self.myPhotos.subjectDict allValues];
-//        
-//        numberOfItemsInSection = [[locationValues objectAtIndex:section]count];
+        NSArray *locationValues = [self.myPhotos.locationDict allValues];
+        
+        numberOfItemsInSection = [[locationValues objectAtIndex:section]count];
         
         
     }
@@ -71,7 +70,7 @@
         numberOfSections = [[self.myPhotos.locationDict allKeys]count];
     
     }
-    NSLog(@"%lu", numberOfSections);
+    
     return numberOfSections;
 }
 
@@ -81,16 +80,17 @@
     
     if (self.choiceOfSegment == 0) {
         
-        NSArray *photos = [self.myPhotos.subjectDict allValues];
-        NSArray *photosShown = [photos objectAtIndex:indexPath.section];
+        NSArray *photosSubj = [self.myPhotos.subjectDict allValues];
+        
+        NSArray *photosShown = [photosSubj objectAtIndex:indexPath.section];
         
         cell.myPhoto.image = photosShown[indexPath.row];
     }
-    
-    if (self.choiceOfSegment == 1){
+    else{
         
-        NSArray *photos = [self.myPhotos.locationDict allValues];
-        NSArray *photosShown = [photos objectAtIndex:indexPath.section];
+        NSArray *photosLoc = [self.myPhotos.locationDict allValues];
+        
+        NSArray *photosShown = [photosLoc objectAtIndex:indexPath.section];
         
         cell.myPhoto.image = photosShown[indexPath.row];
         
@@ -103,7 +103,7 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 - (IBAction)segmentChosen:(UISegmentedControl*)sender {
     
